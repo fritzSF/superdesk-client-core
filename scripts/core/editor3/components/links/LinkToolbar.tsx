@@ -42,7 +42,7 @@ export class LinkToolbarComponent extends React.Component<any, any> {
             <div className={cx}>
                 {!isLink ? <span>&nbsp;</span> : (
                     <span>
-                        {gettext('Link controls:')}
+                        <span className="sd-opacity--60">{gettext('Link controls:')}</span>
                         {
                             link && link.href
                                 ? <a href={link.href} target="_blank" rel="noopener noreferrer">{gettext('Open')}</a>

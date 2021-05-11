@@ -213,13 +213,11 @@ body, html {
 
 .main-article {
     width:auto;
-    background: $white;
     position:relative;
     z-index: 1;
     padding: $main-article-padding;
     margin:0 auto;
     min-height:100%;
-    @include box-sizing(border-box);
     .field {
         max-width: 100%;
         margin-bottom: 20px;
@@ -280,17 +278,19 @@ body, html {
     //labels
     .field {
         .field__label {
-            @include text-normal();
-            background: rgba(0, 0, 0, 0.4);
-            @include border-radius(2px);
+            font-weight: 400;
+            background: var(--sd-editor-colour__field-label-bg);
+            border-radius: 2px;
             color: #fff;
-            display: inline-block;
-            padding: 2px 8px 1px;
-            margin-bottom: 15px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 8px;
+            margin-bottom: 14px;
             font-size: 11px;
             font-family: "Roboto", sans-serif;
-            line-height: 16px;
-            //height: 16px;
+            line-height: 1;
+            height: 20px;
             @include transition(all ease 0.2s);
             opacity: 0.4;
             text-transform: uppercase;
@@ -441,7 +441,6 @@ body, html {
         min-height: 18px;
     }
     // text styles
-    color: rgba(51, 51, 51, 1);
     .text-editor, .headline, .abstract {
         color: inherit;
         padding-left: 0;

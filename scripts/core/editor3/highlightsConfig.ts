@@ -1,7 +1,7 @@
 import {gettext} from 'core/utils';
 
 const ENTITY_STYLE_MAP = {
-    backgroundColor: 'rgba(100, 235, 59, 0.2)',
+    backgroundColor: 'var(--sd-editor-colour__adding-bg',
 };
 
 export function getHighlightsConfig() {
@@ -10,31 +10,31 @@ export function getHighlightsConfig() {
             type: 'COMMENT',
             description: gettext('Comment'),
             draftStyleMap: {
-                backgroundColor: 'rgba(255, 235, 59, 0.2)',
+                backgroundColor: 'var(--sd-editor-colour__comment-bg)',
             },
         },
         ANNOTATION: {
             type: 'ANNOTATION',
             description: gettext('Annotation'),
             draftStyleMap: {
-                borderBottom: '4px solid rgba(100, 205, 0, 0.6)',
+                borderBottom: '4px solid var(--sd-editor-colour__annotation)',
             },
         },
         ADD_SUGGESTION: {
             type: 'CHANGE',
             description: gettext('Add'),
             draftStyleMap: {
-                color: 'rgba(101, 156, 8, 1.0)',
-                backgroundColor: 'rgba(101, 156, 8, 0.2))',
+                color: 'var(--sd-editor-colour__adding)',
+                backgroundColor: 'var(--sd-editor-colour__adding-bg)',
             },
         },
         DELETE_SUGGESTION: {
             type: 'CHANGE',
             description: gettext('Remove'),
             draftStyleMap: {
-                color: 'rgba(143, 43, 196, 1.0)',
+                color: 'var(--sd-editor-colour__removing)',
                 textDecoration: 'line-through',
-                backgroundColor: 'rgba(143, 43, 196, 0.1)',
+                backgroundColor: 'var(--sd-editor-colour__removing-bg)',
             },
         },
         TOGGLE_BOLD_SUGGESTION: {
@@ -42,7 +42,7 @@ export function getHighlightsConfig() {
             style: 'BOLD',
             description: gettext('Toggle bold'),
             draftStyleMap: {
-                backgroundColor: 'rgba(100, 235, 59, 0.2)',
+                backgroundColor: 'var(--sd-editor-colour__adding-bg)',
             },
         },
         TOGGLE_ITALIC_SUGGESTION: {
@@ -50,7 +50,7 @@ export function getHighlightsConfig() {
             style: 'ITALIC',
             description: gettext('Toggle italic'),
             draftStyleMap: {
-                backgroundColor: 'rgba(100, 235, 59, 0.2)',
+                backgroundColor: 'var(--sd-editor-colour__adding-bg)',
             },
         },
         TOGGLE_UNDERLINE_SUGGESTION: {
@@ -58,7 +58,7 @@ export function getHighlightsConfig() {
             style: 'UNDERLINE',
             description: gettext('Toggle underline'),
             draftStyleMap: {
-                backgroundColor: 'rgba(100, 235, 59, 0.2)',
+                backgroundColor: 'var(--sd-editor-colour__adding-bg)',
             },
         },
         TOGGLE_SUBSCRIPT_SUGGESTION: {
@@ -66,7 +66,7 @@ export function getHighlightsConfig() {
             style: 'SUBSCRIPT',
             description: gettext('Toggle subscript'),
             draftStyleMap: {
-                backgroundColor: 'rgba(100, 235, 59, 0.2)',
+                backgroundColor: 'var(--sd-editor-colour__adding-bg)',
             },
         },
         TOGGLE_SUPERSCRIPT_SUGGESTION: {
@@ -74,7 +74,7 @@ export function getHighlightsConfig() {
             style: 'SUPERSCRIPT',
             description: gettext('Toggle superscript'),
             draftStyleMap: {
-                backgroundColor: 'rgba(100, 235, 59, 0.2)',
+                backgroundColor: 'var(--sd-editor-colour__adding-bg)',
             },
         },
         TOGGLE_STRIKETHROUGH_SUGGESTION: {
@@ -82,21 +82,21 @@ export function getHighlightsConfig() {
             style: 'STRIKETHROUGH',
             description: gettext('Toggle strikethrough'),
             draftStyleMap: {
-                backgroundColor: 'rgba(100, 235, 59, 0.2)',
+                backgroundColor: 'var(--sd-editor-colour__adding-bg)',
             },
         },
         BLOCK_STYLE_SUGGESTION: {
             type: 'BLOCK',
             description: gettext('Toggle'),
             draftStyleMap: {
-                backgroundColor: 'rgba(100, 235, 59, 0.2)',
+                backgroundColor: 'var(--sd-editor-colour__adding-bg)',
             },
         },
         SPLIT_PARAGRAPH_SUGGESTION: {
             type: 'SPLIT',
             description: gettext('Split paragraph'),
             draftStyleMap: {
-                color: 'rgba(0, 180, 0, 1.0)',
+                color: 'var(--sd-editor-colour__adding)',
                 fontWeight: 'bold',
                 fontFamily: 'sans-serif',
             },
@@ -105,7 +105,7 @@ export function getHighlightsConfig() {
             type: 'MERGE',
             description: gettext('Merge paragraphs'),
             draftStyleMap: {
-                color: 'rgba(255, 0, 0, 1.0)',
+                color: 'var(--sd-editor-colour__removing)',
                 textDecoration: 'line-through',
                 fontWeight: 'bold',
                 fontFamily: 'sans-serif',
@@ -115,7 +115,7 @@ export function getHighlightsConfig() {
             type: 'DELETE',
             description: gettext('Delete empty paragraphs'),
             draftStyleMap: {
-                color: 'rgba(255, 0, 0, 1.0)',
+                color: 'var(--sd-editor-colour__removing)',
                 textDecoration: 'line-through',
                 fontWeight: 'bold',
                 fontFamily: 'sans-serif',
